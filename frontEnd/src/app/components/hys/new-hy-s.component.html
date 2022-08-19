@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="row">
+        <div>
+            <form (ngSubmit)="onCreate() "novalidate #f="ngForm">
+                <div class="form-group">
+                    <label for="nombreE">Nombre de Skills</label>
+                    <input type="text" class="form-control" id="nombreS" name="nombreE"[(ngModel)]="nombreS" required>
+                </div>
+                <div class="form-group">
+                    <label for="porcentajeS">porcentaje </label>
+                    <input type="number" class="form-control" id="porcentajeS" name="porcentajeS"[(ngModel)]="porcentajeS" required>
+                </div>
+                <div class="form-group">
+                    <label for="imageS">imagen </label>
+                    <input type="text" class="form-control" id="imageS" name="imageS"[(ngModel)]="imageS" required>
+                </div>
+                <button class="btn btn-primary">Agregar Skills
+                </button>
+
+
+            </form>
+        </div>
+
+    </div>
+
+    

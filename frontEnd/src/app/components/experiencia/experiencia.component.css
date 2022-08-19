@@ -1,0 +1,8 @@
+.row{
+padding: 20px;
+background-image: linear-gradient(to left, #accbee 0%, #e7f0fd 100%);
+}
+
+h2,h3{
+    display: inline;
+}

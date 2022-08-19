@@ -1,0 +1,29 @@
+<div class="container" *ngIf="persona">
+    <div class="row">
+        <div>
+            <form (ngSubmit)="onUpdate() "novalidate #f="ngForm">
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre"[(ngModel)]="persona.nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="apellido">apellido</label>
+                    <input type="text" class="form-control" id="apellido" name="apellido"[(ngModel)]="persona.apellido" required>
+                </div>
+                <div class="form-group">
+                    <label for="descripcion">descripcion</label>
+                    <input type="text" class="form-control" id="descripcion" name="descrpcion"[(ngModel)]="persona.descripcion" required>
+                </div>
+                <div class="form-group">
+                    <label for="img">Imagen </label>
+                    <input type="text" class="form-control" id="img" name="img"[(ngModel)]="persona.img" required>
+                </div>
+                <button class="btn btn-primary">Actualizar
+                </button>
+
+            </form>
+        </div>
+
+    </div>
+
+</div>

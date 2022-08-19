@@ -1,0 +1,17 @@
+.row{
+    background-image: linear-gradient(to left, #accbee 0%, #e7f0fd 100%);
+    padding: 20px;
+    
+}
+h2,h3{
+    display: inline;
+}
+.editDelete{
+    margin-left: 130px;
+    
+}
+@media(min-width:1920px){
+    .editDelete{
+      margin-left:230px ;
+    }
+}
