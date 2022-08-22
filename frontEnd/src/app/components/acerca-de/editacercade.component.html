@@ -1,22 +1,22 @@
-<div class="container" *ngIf="persona">
+<div class="container" *ngIf="Persona">
     <div class="row">
         <div>
             <form (ngSubmit)="onUpdate() "novalidate #f="ngForm">
                 <div class="form-group">
                     <label for="nombre">Nombre</label>
-                    <input type="text" class="form-control" id="nombre" name="nombre"[(ngModel)]="persona.nombre" required>
+                    <input type="text" class="form-control" id="nombre" name="nombre"[(ngModel)]="Persona.nombre" required>
                 </div>
                 <div class="form-group">
                     <label for="apellido">apellido</label>
-                    <input type="text" class="form-control" id="apellido" name="apellido"[(ngModel)]="persona.apellido" required>
+                    <input type="text" class="form-control" id="apellido" name="apellido"[(ngModel)]="Persona.apellido" required>
                 </div>
                 <div class="form-group">
                     <label for="descripcion">descripcion</label>
-                    <input type="text" class="form-control" id="descripcion" name="descrpcion"[(ngModel)]="persona.descripcion" required>
+                    <input type="text" class="form-control" id="descripcion" name="descrpcion"[(ngModel)]="Persona.descripcion" required>
                 </div>
                 <div class="form-group">
                     <label for="img">Imagen </label>
-                    <input type="text" class="form-control" id="img" name="img"[(ngModel)]="persona.img" required>
+                    <input type="text" class="form-control" id="img" name="img"[(ngModel)]="Persona.img" required>
                 </div>
                 <button class="btn btn-primary">Actualizar
                 </button>

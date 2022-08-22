@@ -23,7 +23,12 @@ export class PersonaService {
   public editar(id: number, Persona:persona): Observable<any>{
     return this.http.put<any>(this.URL + `editar/${id}`, Persona);
   }
+<<<<<<< Updated upstream
   public crear(Persona:persona):Observable<any>{
     return this.http.post<any>(this.URL + `crear`,Persona)
+=======
+  public save(persona: persona): Observable<any>{
+    return this.http.post<any>(this.URL + 'crear', persona);
+>>>>>>> Stashed changes
   }
 }

@@ -10,14 +10,14 @@ import { AcercaDeComponent } from './acerca-de.component';
   styleUrls: ['./editacercade.component.css']
 })
 export class EditacercadeComponent implements OnInit {
-persona:persona=null
+Persona:persona=null
   constructor(private activatedRouter:ActivatedRoute,private servicePersona:PersonaService, private router:Router) { }
 
   ngOnInit(): void {
     this.activatedRouter.snapshot.params['id'];
     this.servicePersona.getPersona().subscribe(
       data =>{
-        this.persona= data;
+        this.Persona= data;
       }, err =>{
          alert("Error al modificar");
          this.router.navigate(['']);
@@ -26,8 +26,13 @@ persona:persona=null
  
   }
   onUpdate():void{
+<<<<<<< Updated upstream
    const id = this.activatedRouter.snapshot.params['id'];
     this.servicePersona.editar(id ,this.persona).subscribe(
+=======
+    this.activatedRouter.snapshot.params['Persona'];
+    this.servicePersona.save( this.Persona).subscribe(
+>>>>>>> Stashed changes
       data => {
         this.router.navigate(['']);
       }, err => {
@@ -37,3 +42,4 @@ persona:persona=null
     )
   }
 }
+

@@ -10,6 +10,12 @@ div{
 
 #nombre{
     font-weight: bold;
+    margin-top: 5%;  
+    font-size:x-large;
+    
+}
+#nombre1{
+    font-weight: bold;
     margin-top: 20%;  
     font-size:x-large;
     
@@ -51,6 +57,6 @@ div{
         border-radius:100% ;
         box-shadow: 3px 3px 3px grey;        
         left: 3%;
-        top: 300px;
+        top: 250px;
     }
 }
