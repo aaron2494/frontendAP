@@ -14,7 +14,7 @@ Persona:persona=null
   constructor(private activatedRouter:ActivatedRoute,private servicePersona:PersonaService, private router:Router) { }
 
   ngOnInit(): void {
-    this.activatedRouter.snapshot.params['id'];
+    this.activatedRouter;
     this.servicePersona.getPersona().subscribe(
       data =>{
         this.Persona= data;
@@ -26,13 +26,9 @@ Persona:persona=null
  
   }
   onUpdate():void{
-<<<<<<< Updated upstream
+
    const id = this.activatedRouter.snapshot.params['id'];
-    this.servicePersona.editar(id ,this.persona).subscribe(
-=======
-    this.activatedRouter.snapshot.params['Persona'];
-    this.servicePersona.save( this.Persona).subscribe(
->>>>>>> Stashed changes
+    this.servicePersona.editar(id ,this.Persona).subscribe(
       data => {
         this.router.navigate(['']);
       }, err => {

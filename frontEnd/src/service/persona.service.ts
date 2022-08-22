@@ -8,6 +8,7 @@ import { persona } from 'src/app/model/persona.model';
 })
 export class PersonaService {
   URL="https://backendapr.herokuapp.com/personas/";
+  //URL='http://localhost:8080/personas/';
   
   constructor(private http:HttpClient) { }
 
@@ -23,12 +24,9 @@ export class PersonaService {
   public editar(id: number, Persona:persona): Observable<any>{
     return this.http.put<any>(this.URL + `editar/${id}`, Persona);
   }
-<<<<<<< Updated upstream
+
   public crear(Persona:persona):Observable<any>{
-    return this.http.post<any>(this.URL + `crear`,Persona)
-=======
-  public save(persona: persona): Observable<any>{
-    return this.http.post<any>(this.URL + 'crear', persona);
->>>>>>> Stashed changes
+    return this.http.post<any>(this.URL + `crear`,Persona);
   }
+
 }

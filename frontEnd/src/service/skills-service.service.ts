@@ -8,6 +8,7 @@ import { Skills } from 'src/app/model/skills';
 })
 export class SkillsServiceService {
 skillURL=" https://backendapr.herokuapp.com/Skills/"
+//skillURL='http://localhost:8080/skills/'
   constructor(private httpClient:HttpClient) { }
   
   public lista(): Observable<Skills[]>{
