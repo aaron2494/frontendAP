@@ -26,8 +26,8 @@ persona:persona=null
  
   }
   onUpdate():void{
-    const id = this.activatedRouter.snapshot.params['id'];
-    this.servicePersona.editar(id, this.persona).subscribe(
+   const id = this.activatedRouter.snapshot.params['id'];
+    this.servicePersona.editar(id ,this.persona).subscribe(
       data => {
         this.router.navigate(['']);
       }, err => {
