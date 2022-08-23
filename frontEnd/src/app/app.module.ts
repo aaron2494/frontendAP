@@ -27,6 +27,9 @@ import { EditwHySComponent } from './components/hys/editw-hy-s.component';
 import { NewProyectComponent } from './components/proyectos/new-proyect.component';
 import { EditProyectComponent } from './components/proyectos/edit-proyect.component';
 import { EditacercadeComponent } from './components/acerca-de/editacercade.component';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideStorage,getStorage } from '@angular/fire/storage';
 
 @NgModule({
   declarations: [
@@ -57,7 +60,9 @@ import { EditacercadeComponent } from './components/acerca-de/editacercade.compo
     AppRoutingModule,
     FormsModule,
     NgCircleProgressModule.forRoot({}),
-    HttpClientModule
+    HttpClientModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideStorage(() => getStorage())
   ],
   providers: [
     interceptorProvider

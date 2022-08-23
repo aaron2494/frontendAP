@@ -1,8 +1,10 @@
 
-<div class ="row"*ngFor="let persona of Persona">
-    <div   class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-        <img srcset={{persona.img}} class="img-fluid" id="foto-perfil" accept="image/png, .jpeg, .jpg, image/gif">
-    </div>
+<div class="row" *ngFor="let persona of Persona">
+    <div  class="col-xs-12 col-sm-2 col-md-2 col-lg-2">       
+        <input type="file" (change)="uploadImage($event)"class="btn btn-light">
+        <img [src]= "image"class="img-fluid" id="foto-perfil" *ngFor="let image of images">
+    </div> 
+
     <div  class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
             <u><p id="nombre1">Nombre</p></u>
               <p id="nombre">{{persona.nombre}} {{persona.apellido}}</p>          
@@ -13,7 +15,8 @@
             <p>{{persona.descripcion}}</p>
         </span>
 </div>
-<div class="buttom"   >
+
+<div class="buttom" >
     <td *ngIf="isLogged">
         <button class="btn btn-light" routerLink="/editpersona/{{persona.id}}">
              <i class="bi bi-pencil-fill"></i>editar</button>  

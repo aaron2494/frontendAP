@@ -7,10 +7,17 @@ div{
     
     text-align: center;    
 }
+input{
+    margin-top: 8em;
+    width: 170px;
+}
+
+
+
 
 #nombre{
     font-weight: bold;
-    margin-top: 5%;  
+    margin-top: 2%;  
     font-size:x-large;
     
 }
