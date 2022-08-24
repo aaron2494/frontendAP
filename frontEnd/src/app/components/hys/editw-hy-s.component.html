@@ -2,17 +2,17 @@
     <div class="row">
         <div>
             <form (ngSubmit)="onUpdate() "novalidate #f="ngForm">
-                <div class="form-group">
-                    <label for="nombreS">Nombre de Skills</label>
+                <div class="card">
+                    <label class="card-body" for="nombreS">Nombre de Skills</label>
                     <input type="text" class="form-control" id="nombreS" name="nombreS"[(ngModel)]="skills.nombreS" required>
                 </div>
                 
-                <div class="form-group">
-                    <label for="porcentajeS">porcentaje</label>
+                <div class="card">
+                    <label class="card-body" for="porcentajeS">porcentaje</label>
                     <input type="number" class="form-control" id="porcentajeS" name="porcentajeS"[(ngModel)]="skills.porcentajeS" required>
                 </div>
                 <div class="form-group">
-                    <label for="imageS">Imagen de Skill</label>
+                    <label class="card-body" for="imageS">Imagen de Skill</label>
                     <input type="text" class="form-control" id="imageS" name="imageS"[(ngModel)]="skills.imageS" required>
                 </div>
                 <button class="btn btn-primary">Actualizar

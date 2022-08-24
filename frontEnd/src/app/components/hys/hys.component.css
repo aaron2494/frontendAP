@@ -15,3 +15,7 @@ h2,h3{
       margin-left:230px ;
     }
 }
+h1{
+    animation: flicker 6s infinite alternate;
+    color: black;
+}
