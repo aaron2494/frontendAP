@@ -6,3 +6,7 @@ background-image: linear-gradient(to left, #accbee 0%, #e7f0fd 100%);
 h2,h3{
     display: inline;
 }
+h1{
+    text-align: center;
+    text-shadow:2px 2px black ;
+}
