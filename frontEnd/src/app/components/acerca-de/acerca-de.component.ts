@@ -56,8 +56,6 @@ export class AcercaDeComponent implements OnInit {
       listAll(imageRef)
       .then(async Response=>{
       console.log(Response);
-      this.images=[];
-
       for(let item of Response.items){
       const url= await getDownloadURL(item);
       this.images.push(url);

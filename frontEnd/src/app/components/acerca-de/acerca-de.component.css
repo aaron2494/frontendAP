@@ -12,7 +12,10 @@ input{
     width: 170px;
 }
 
+h1{
+    text-shadow:2px 1px grey ;
 
+}
 
 
 
@@ -26,6 +29,7 @@ input{
     font-weight: bold;
     margin-top: 20%;  
     font-size:x-large;
+    text-shadow:2px 1px grey ;
     
 }
 @media (max-width:575px) {
